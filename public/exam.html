@@ -56,38 +56,38 @@
                     </li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
-                        <button type="button" class=" btn btn-default" >1</button> </p>
+                        <button type="button" class=" btn btn-default" id="btn_time">1</button> </p>
                     </li>
                     <li>
                       <a href="#about">No Question</a>
                       <li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
-                        <button type="button" class=" btn btn-default" >1</button> </p>
+                        <button type="button" class=" btn btn-default" id="btn_number">1</button> </p>
                     </li>
                     <li>
                         <a href="#about">Total Question</a>
                     </li>
                   <li>
                     <p style="line-height: 50px; text-align: center;">
-                      <button type="button" class=" btn btn-default" >1</button> </p>
+                      <button type="button" class=" btn btn-default" id="btn_total">1</button> </p>
                   </li>
                   <li>
                       <a href="#about"></a>
                   </li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
-                        <button type="button" class=" btn btn-default" >1</button>
-                        <button type="button" class=" btn btn-default" >2</button>
-                        <button type="button" class=" btn btn-default" >3</button>
-                        <button type="button" class=" btn btn-default" >4</button>
-                        <button type="button" class=" btn btn-default" >5</button>
+                        <button type="button" class=" btn btn-default" id="btn_no1">1</button>
+                        <button type="button" class=" btn btn-default" id="btn_no2">2</button>
+                        <button type="button" class=" btn btn-default" id="btn_no3">3</button>
+                        <button type="button" class=" btn btn-default" id="btn_no4">4</button>
+                        <button type="button" class=" btn btn-default" id="btn_no5">5</button>
 
-                        <button type="button" class=" btn btn-default" >6</button>
-                        <button type="button" class=" btn btn-default" >7</button>
-                        <button type="button" class=" btn btn-default" >8</button>
-                        <button type="button" class=" btn btn-default" >9</button>
-                        <button type="button" class=" btn btn-default" >10</button> </p>
+                        <button type="button" class=" btn btn-default" id="btn_no6">6</button>
+                        <button type="button" class=" btn btn-default" id="btn_no7">7</button>
+                        <button type="button" class=" btn btn-default" id="btn_no8">8</button>
+                        <button type="button" class=" btn btn-default" id="btn_no9">9</button>
+                        <button type="button" class=" btn btn-default" id="btn_no10">10</button> </p>
                     </li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
@@ -109,19 +109,37 @@
           <h1>Pertanyaan</h1>
             <div class="row">
                 <div class="col-lg-12">
-                  <div style="text-align: left;">
-                    <textarea name="name" rows="10%" cols="80%" style="resize:none"></textarea>
+                  <div class="row">
+                      <div class="col-lg-6 text-center">
+                          <div class="panel panel-default rows="10%" cols="50%"">
+                              <div class="panel-body">
+                                  .col-lg-6
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 " style="text-align: left;">
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio1" id="option1">A</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio2" id="option2">B</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio3" id="option3">C</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio4" id="option4">D</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio5" id="option5">E</label>
+                              </div>
+                              </div>
                   </div>
-
                     <div class="intro-text">
-                      <div>
-                      <label class="radio-inline"><input type="radio" name="optradio1" id="optradio1">A</label>
-                      <label class="radio-inline"><input type="radio" name="optradio2" id="optradio2">B</label>
-                      <label class="radio-inline"><input type="radio" name="optradio3" id="optradio3">C</label>
-                      <label class="radio-inline"><input type="radio" name="optradio4" id="optradio4">D</label>
-                      <label class="radio-inline"><input type="radio" name="optradio5" id="optradio5">E</label>
+
                       <br>
-                          <button type="submit" class="btn-success btn-lg">Submit</button>
+                          <button type="submit" class="btn-success btn-lg" id="btn_submit">Submit</button>
+                          <a href="score.html"><button type="finish" class="btn-success btn-lg" id="btn_finish">Finish</button></a>
                       </div>
                     </div>
                 </div>
