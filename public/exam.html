@@ -16,7 +16,7 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-
+    <link href="css/bebas.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -55,44 +55,49 @@
                         <a href="#about">Time</a>
                     </li>
                     <li>
-                      <p style="line-height: 50px; text-align: center;">
-                        <button type="button" class=" btn btn-default" id="btn_time">1</button> </p>
+                      <p style="line-height: 50px;">
+                        <button type="button" class=" btn btn-default btn_time" id="btn_hour">01</button>
+                        <button type="button" class=" btn btn-default btn_time" id="btn_minute">02</button>
+                        <button type="button" class=" btn btn-default btn_time" id="btn_second">02</button>
                     </li>
                     <li>
-                      <a href="#about">No Question</a>
+                      <a href="#about">Current Question</a>
                       <li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
-                        <button type="button" class=" btn btn-default" id="btn_number">1</button> </p>
+                        <button type="button" class=" btn btn-default" id="current">10</button> </p>
                     </li>
                     <li>
-                        <a href="#about">Total Question</a>
+                        <a href="#about">Answer</a>
                     </li>
                   <li>
                     <p style="line-height: 50px; text-align: center;">
-                      <button type="button" class=" btn btn-default" id="btn_total">1</button> </p>
+                      <button type="button" class=" btn btn-default" id="btn_qanswer">11</button> </p>
                   </li>
                   <li>
                       <a href="#about"></a>
                   </li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
-                        <button type="button" class=" btn btn-default" id="btn_no1">1</button>
-                        <button type="button" class=" btn btn-default" id="btn_no2">2</button>
-                        <button type="button" class=" btn btn-default" id="btn_no3">3</button>
-                        <button type="button" class=" btn btn-default" id="btn_no4">4</button>
-                        <button type="button" class=" btn btn-default" id="btn_no5">5</button>
+                        <button type="button" class=" btn btn-default" id="btn_no1" class="allno">1</button>
+                        <button type="button" class=" btn btn-default" id="btn_no2" class="allno">2</button>
+                        <button type="button" class=" btn btn-default" id="btn_no3" class="allno">3</button>
+                        <button type="button" class=" btn btn-default" id="btn_no4" class="allno">4</button>
+                        <button type="button" class=" btn btn-default" id="btn_no5" class="allno">5</button>
 
-                        <button type="button" class=" btn btn-default" id="btn_no6">6</button>
-                        <button type="button" class=" btn btn-default" id="btn_no7">7</button>
-                        <button type="button" class=" btn btn-default" id="btn_no8">8</button>
-                        <button type="button" class=" btn btn-default" id="btn_no9">9</button>
-                        <button type="button" class=" btn btn-default" id="btn_no10">10</button> </p>
+                        <button type="button" class=" btn btn-default" id="btn_no6" class="allno">6</button>
+                        <button type="button" class=" btn btn-default" id="btn_no7" class="allno">7</button>
+                        <button type="button" class=" btn btn-default" id="btn_no8" class="allno">8</button>
+                        <button type="button" class=" btn btn-default" id="btn_no9" class="allno">9</button>
+                        <button type="button" class=" btn btn-default" id="btn_no10" class="allno">10</button>&nbsp; </p>
+
                     </li>
                     <li>
                       <p style="line-height: 50px; text-align: center;">
                       <img class="navbar-brand " src="img/glyphicons-214-arrow-up.png" alt="" id="arrow_right">
                       <img class="navbar-brand " src="img/glyphicons-213-arrow-down.png" alt="" id="arrow_right">
+
+                        <a href="score.html"><button type="button" class="btn-success btn-lg" id="btn_finish">Finish</button></a>
                     </p>
                     </li>
 
@@ -106,45 +111,51 @@
     <!-- Header -->
     <header>
         <div class="container">
+
           <h1>Pertanyaan</h1>
             <div class="row">
                 <div class="col-lg-12">
                   <div class="row">
                       <div class="col-lg-6 text-center">
                           <div class="panel panel-default rows="10%" cols="50%"">
-                              <div class="panel-body">
-                                  .col-lg-6
+                              <div class="panel-body question">
+                                  <p id="question">
+                                    .col-lg-6
+                                  </p>
                               </div>
                           </div>
                       </div>
                       <div class="col-lg-6 " style="text-align: left;">
                                 <div>
-                                <label class="radio-inline"><input type="radio" name="optradio1" id="option1">A</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option1">A</label>
                                 </div>
                                 <div>
-                                <label class="radio-inline"><input type="radio" name="optradio2" id="option2">B</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option2">B</label>
                                 </div>
                                 <div>
-                                <label class="radio-inline"><input type="radio" name="optradio3" id="option3">C</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option3">C</label>
                                 </div>
                                 <div>
-                                <label class="radio-inline"><input type="radio" name="optradio4" id="option4">D</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option4">D</label>
                                 </div>
                                 <div>
-                                <label class="radio-inline"><input type="radio" name="optradio5" id="option5">E</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option5">E</label>
                               </div>
                               </div>
                   </div>
                     <div class="intro-text">
 
                       <br>
-                          <button type="submit" class="btn-success btn-lg" id="btn_submit">Submit</button>
-                          <a href="score.html"><button type="finish" class="btn-success btn-lg" id="btn_finish">Finish</button></a>
+                          <button type="submit" class="btn-success btn-lg colorbtn" id="btn_answer">Answer</button>
+
                       </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
     </header>
 
     <!-- Footer -->
